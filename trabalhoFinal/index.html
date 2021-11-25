@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <!-- Importação do normalize css para arrumar bugs -->
+        <link rel="stylesheet" type="text/css" href="vendors/css/normalize.css">
+        <!-- Importação do sistema de grid -->
+        <link rel="stylesheet" type="text/css" href="vendors/css/grid.css">
+        <!-- Importação do sistema de carrossel -->
+        <!-- <link rel="stylesheet" type="text/css" href="vendors/css/carrossel.css"> -->
+        <link href="https://cdn.jsdelivr.net/npm/glider-js@1/glider.min.css" rel="stylesheet">
+        <!-- Importação do nossa folha de estilo -->
+        <link rel="stylesheet" type="text/css" href="resources/css/style.css">
+        <!-- Importação da fonte Lato -->
+        <link href="https://fonts.googleapis.com/css?family=Lato:100,300,300i,400&amp;subset=latin-ext" rel="stylesheet">
+        <title>Equilibrium</title>
+
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
+    </head>
+    <body>
+        <header class="header">
+            <a href="" class="logo menu-tag-a"><ion-icon ios="ios-bicycle" md="md-bicycle"></ion-icon></a>
+            <input class="menu-btn" type="checkbox" id="menu-btn" />
+            <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+            <ul class="menu">
+                <li><a href="#sobre_nos" class="menu-tag-a">Sobre Nós</a></li>
+                <li><a href="#academmias" class="menu-tag-a">Academias</a></li>
+                <li><a href="#depoimentos" class="menu-tag-a">Depoimentos</a></li>
+                <li><a href="#" class="menu-tag-a" onclick="openCloseDialogWait('block')">Contato</a></li>
+            </ul>
+        </header>
+
+        <main class="containerMain">
+            <section class="glider-contain">
+                <div class="glider">
+                    <div><img src="vendors/css/img/banner1.png" class="griImg"></div>
+                    <div><img src="vendors/css/img/banner2.jpg" class="griImg"></div>
+                    <div><img src="vendors/css/img/banner3.jpg" class="griImg"></div>
+                </div>
+                <div role="tablist" class="dots"></div>
+            </section>
+
+            <section class="section-features1" id="sobre_nos">
+                <div class="row">
+                    <h2>TREINAR: O LUGAR PERFEITO PARA MANTER O SEU CORPO EM FORMA!</h2>
+                    <p class="long-copy">
+                        Fazer exercícios físicos regularmente colabora para atingir e manter um peso saudável. 
+                        Ser fisicamente ativo também pode fazê-lo ter mais energia, melhorar seu humor e reduzir o risco 
+                        de desenvolver doenças crônicas, além de fortalecer os ossos e regular o sono.
+                    </p>
+                </div>
+            </section>
+
+            <section class="grids-card" id="academmias"> 
+                <div class="container">
+                    <div class="card card1">
+                        <div class="card-img" alt="Imagem 1"></div>
+                        <div class="card-conteudo">
+                            <h5 class="card-title">Porto Algre Zona Sul</h5>
+                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                                Aliquam eros lorem, commodo ac pellentesque venenatis, gravida ac elit. 
+                            </p>
+                            <a href="#" class="btn-card">Matricula</a>
+                        </div>
+                    </div>
+                    <div class="card  card2">
+                        <div class="card-img2" alt="Imagem 2"></div>
+                        <div class="card-conteudo">
+                            <h5 class="card-title">Porto Algre Zona Sul</h5>
+                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                                Aliquam eros lorem, commodo ac pellentesque venenatis, gravida ac elit. 
+                            </p>
+                            <a href="#" class="btn-card">Matricula</a>
+                        </div>
+                    </div>
+                    <div class="card  card3">
+                        <div class="card-img3" alt="Imagem 3"></div>
+                        <div class="card-conteudo">
+                            <h5 class="card-title">Porto Algre Zona Sul</h5>
+                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                                Aliquam eros lorem, commodo ac pellentesque venenatis, gravida ac elit. 
+                            </p>
+                            <a href="#" class="btn-card">Matricula</a>
+                        </div>
+                    </div>
+                    <div class="card  card4">
+                        <div class="card-img4" alt="Imagem 4"></div>
+                        <div class="card-conteudo">
+                            <h5 class="card-title">Porto Algre Zona Sul</h5>
+                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                                Aliquam eros lorem, commodo ac pellentesque venenatis, gravida ac elit. 
+                            </p>
+                            <a href="#" class="btn-card">Matricula</a>
+                        </div>
+                    </div>
+                    <div class="card card5">
+                        <div class="card-img5" alt="Imagem 5"></div>
+                        <div class="card-conteudo">
+                            <h5 class="card-title">Porto Algre Zona Sul</h5>
+                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                                Aliquam eros lorem, commodo ac pellentesque venenatis, gravida ac elit. 
+                            </p>
+                            <a href="#" class="btn-card">Matricula</a>
+                        </div>
+                    </div>
+                    <div class="card  card6">
+                        <div class="card-img6" alt="Imagem 6"></div>
+                        <div class="card-conteudo">
+                            <h5 class="card-title">Porto Algre Zona Sul</h5>
+                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                                Aliquam eros lorem, commodo ac pellentesque venenatis, gravida ac elit. 
+                            </p>
+                            <a href="#" class="btn-card">Matricula</a>
+                        </div>
+                    </div>
+                    <div class="card card7">
+                        <div class="card-img7" alt="Imagem 7"></div>
+                        <div class="card-conteudo">
+                            <h5 class="card-title">Porto Algre Zona Sul</h5>
+                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                                Aliquam eros lorem, commodo ac pellentesque venenatis, gravida ac elit. 
+                            </p>
+                            <a href="#" class="btn-card">Matricula</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section-features1">
+                <div class="row">
+                    <h2>Planos!</h2>
+                    <p class="long-copy">
+                        O seu plano!
+                    </p>
+                </div>
+            </section>
+
+            <section class="grids-card"> 
+                <div class="container-plano">
+                    <div class="card cardPlano1">
+                        <div class="card-img-plano" alt="Imagem 1"></div>
+                        <div class="card-conteudo">
+                            <h5 class="card-title">12 MESES</h5>
+                            <a href="#" class="btn-card">Saiba Mais</a>
+                        </div>
+                    </div>
+                    <div class="card cardPlano2">
+                        <div class="card-img2-plano" alt="Imagem 2"></div>
+                        <div class="card-conteudo">
+                            <h5 class="card-title">12 MESES</h5>
+                            <a href="#" class="btn-card">Saiba Mais</a>
+                        </div>
+                    </div>
+                    <div class="card cardPlano3">
+                        <div class="card-img3-plano" alt="Imagem 3"></div>
+                        <div class="card-conteudo">
+                            <h5 class="card-title">6 MESES</h5>
+                            <a href="#" class="btn-card">Saiba Mais</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section-testimonials" id="depoimentos">
+                <div class="containerDepoimento">
+                   <!-- Aqui irá o título da primeira div -->
+                   <h2>Melhorando a qualidade de vida das pessoas</h2>
+                </div>
+                <div class="containerDepoimento">
+                    <div class="cardDepoimento cardDepoimento1">
+                        <!-- coluna de depoimento -->
+                        <blockquote>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque volutpat malesuada massa non porttitor. Vivamus tristique laoreet lorem, at maximus ante ultrices vel.
+                            <cite>
+                                <img src="resources/img/depo.jpg"/>Pedro Antunes
+                            </cite>
+                        </blockquote>
+                    </div>
+                    <div class="cardDepoimento cardDepoimento2">
+                        <!-- coluna de depoimento -->
+                        <blockquote>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque volutpat malesuada massa non porttitor. Vivamus tristique laoreet lorem, at maximus ante ultrices vel.
+                            <cite>
+                                <img src="resources/img/depo.jpg"/>Pedro Antunes
+                            </cite>
+                        </blockquote>
+                    </div>
+                    <div class="cardDepoimento cardDepoimento3">
+                        <!-- coluna de depoimento -->
+                        <blockquote>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque volutpat malesuada massa non porttitor. Vivamus tristique laoreet lorem, at maximus ante ultrices vel.
+                            <cite>
+                                <img src="resources/img/depo.jpg"/>Pedro Antunes
+                            </cite>
+                        </blockquote>
+                    </div>
+                </div>
+            </section>
+
+            <footer>
+                <div class="row">
+                    <div class="col span-1-of-2">
+                        <ul class="footer-nav">
+                            <li><a href="#sobre_nos">Sobre Nós</a></li>
+                            <li><a href="#academmias">Academias</a></li>
+                            <li><a href="#depoimentos">Depoimentos</a></li>
+                            <li><a href="#">Contato</a></li>
+                        </ul>
+                    </div>
+                    <div class="col span-1-of-2">
+                        <ul class="social-links">
+                            <li><a href="#"><ion-icon class="logo-instagram" name="logo-instagram"></ion-icon></a></li>
+                            <li><a href="#"><ion-icon class="logo-facebook" name="logo-facebook"></ion-icon></a></li>
+                            <li><a href="#"><ion-icon class="logo-googleplus" name="logo-googleplus"></ion-icon></a></li>
+                            <li><a href="#"><ion-icon class="logo-twitter" name="logo-twitter"></ion-icon></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="row">
+                    <p>Copyright &copy; 2021 - Equilibrium. Todos os direitos reservados.</p>
+               </div>
+            </footer>
+            
+            <div id="white_content_wait" align="center">
+                <h3>Formulário de Contato</h3>
+
+                <form action="#" class="form">
+
+                    <label for="nome">Nome:</label>
+                    <input type="text" name="nome"><br><br>
+
+                    <label for="email">E-mail:</label>
+                    <input type="email" name="email"><br><br>
+
+                    <label for="telefone">Telefone:</label>
+                    <input type="number" name="telefone"><br><br>
+
+                    <button type="button" class="btn-fechar" onclick="openCloseDialogWait('none')">Fechar</button>
+                    <button type="button" class="btn-enviar" onclick="openCloseDialogWait('none')">Enviar</button>
+
+                </form>
+
+
+
+            </div>
+            <div id="black_overlay"></div>
+        </main>
+        <script src="https://unpkg.com/ionicons@4.2.2/dist/ionicons.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/glider-js@1/glider.min.js"></script>
+    </body>
+</html>
+
+<script>
+    
+//var $simpleCarousel = document.querySelector(".js-carousel--simple");
+ 
+new Glider(document.querySelector('.glider'), {
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  draggable: true,
+  dots: '.dots',
+  arrows: {
+    prev: '.glider-prev',
+    next: '.glider-next'
+  }
+  /*
+  ,
+  responsive: [
+    {
+      // screens greater than >= 775px
+      breakpoint: 775,
+      settings: {
+        // Set to `auto` and provide item width to adjust to viewport
+        slidesToShow: 'auto',
+        slidesToScroll: 'auto',
+        itemWidth: 150,
+        duration: 0.25
+      }
+    },{
+      // screens greater than >= 1024px
+      breakpoint: 1024,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 3,
+        itemWidth: 150,
+        duration: 0.25
+      }
+    }
+  ]
+  */
+});
+function openCloseDialogWait(val){
+    console.log('dadas');
+    document.getElementById('white_content_wait').style.display = val;
+    document.getElementById('black_overlay').style.display = val;
+}
+</script>
+
+
