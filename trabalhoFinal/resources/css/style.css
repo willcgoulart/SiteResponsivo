@@ -154,6 +154,24 @@ html {
     margin-left: 10%; /*10% para cada lado*/
   }
 
+  .long-ambiente {
+    line-height:145%;
+    width: 80%; /*ocupa 80%, sobra 20%*/
+    margin-left: 5%; /*10% para cada lado*/
+  }
+
+  .long-ambiente-esquerdo {
+    line-height:145%;
+    width: 80%; /*ocupa 80%, sobra 20%*/
+    margin-right: 5%; /*10% para cada lado*/
+  }
+
+  .long-maps-esquerdo {
+    line-height:145%;
+    width: 40%; /*ocupa 80%, sobra 20%*/
+    margin-right: 5%; /*10% para cada lado*/
+  }
+
   .section-features .long-copy {
     margin-bottom: 30px;
   }
@@ -234,11 +252,27 @@ html {
     padding-top: 20px;
   }
 
+  .containerAmbiente {
+    display: flex;
+    max-width: 1140px; /*Define o tamanho máximo da linha*/
+    min-width: 320px;
+    margin: 0 auto 0 auto; /*Define que o container vai ficar centralizado*/
+    padding: 0px 20px 0px 20px;
+  }
+
   .containerDepoimento {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     flex-flow: wrap;
+  }
+
+  .containerMaps {
+    display: flex;
+    max-width: 1140px; /*Define o tamanho máximo da linha*/
+    min-width: 320px;
+    margin: 0 auto 0 auto; /*Define que o container vai ficar centralizado*/
+    padding: 0px 20px 0px 20px;
   }
 
   .card {
@@ -250,20 +284,23 @@ html {
     border-color: #555;
     max-width: 13rem;
     padding: 0!important;
+    margin-right: 20px;
+  }
+
+  .card1, .card2, .card3, .card4 {
+    /*flex-grow: 3;*/
   }
 
   .cardDepoimento{
     max-width: 13rem;
   }
   
-  .card5, .card6, .card7{
-    margin: 20px 0px 0px 0px;
-  }
 
   .cardPlano1, .cardPlano2, .cardPlano3 {
     width: 50%;
   }
-  .cardPlano1 {
+
+  .cardPlano1, .cardPlano2, .cardPlano3 {
     flex-grow: 1;
   }
 
@@ -313,21 +350,21 @@ html {
   .card-img-plano {
     object-fit: cover;
     height: 200px;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../../vendors/css/img/planoAnual.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../../vendors/img/planoAnual.jpg);
     background-size: cover; /*preencher toda a largura da janela do navegador*/
   }
 
   .card-img2-plano {
     object-fit: cover;
     height: 200px;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../../vendors/css/img/planoDuo.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../../vendors/img/planoDuo.jpg);
     background-size: cover; /*preencher toda a largura da janela do navegador*/
   }
 
   .card-img3-plano {
     object-fit: cover;
     height: 200px;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../../vendors/css/img/planoSemestral.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../../vendors/img/planoSemestral.jpg);
     background-size: cover; /*preencher toda a largura da janela do navegador*/
   }
 
@@ -372,16 +409,15 @@ html {
   } 
   
   cite {
-    font-size: 90%;
-    margin-top: 25px;
+    font-size: 70%;
     display:block;
   }
 
   cite img {
-    height: 50px;
+    height: 150px;
     border-radius: 50%;
-    margin-right: 10px;
     vertical-align:middle;
+    padding-right: 10px;
   }
 
   footer {
@@ -392,14 +428,32 @@ html {
     width: 100%;
   }
 
+  .input-email {
+    display: block;
+    margin: 0 auto 0 auto;
+    margin-top: 20px;
+    padding: 10px 10px 10px 10px;
+    width: 200px;
+  }
+
+  .button-email {
+    display: block;
+    margin: 0 auto 0 auto;
+    margin-top: 20px;
+    width: 120px;
+    background-color: #e67e22;
+  }
+
   .footer-nav {
     list-style: none;
     float: left;
+    padding: 20px 0px 0px 0px;
   }
 
   .social-links {
     list-style: none;
     float: right;
+    padding: 20px 0px 0px 0px;
   }
 
   .footer-nav li,
@@ -426,6 +480,10 @@ html {
   .footer-nav li a:hover,
   .footer-nav li a:active {
     color: #ddd;
+  }
+
+  .icon-footer {
+    margin: 0 auto 0 auto;
   }
 
   .social-links li a:link,
@@ -475,7 +533,7 @@ html {
 
   .griImg {
     width: 100%;
-    height: 200px;
+    height: 400px;
   }
 
   #white_content_wait {
@@ -528,6 +586,10 @@ html {
     color: white;
   }
 
+  input {
+    border-radius: 0.25rem;
+  }
+
   .btn-enviar {
     position:absolute;
     right:70px;
@@ -537,6 +599,18 @@ html {
     background-color: #007bff;
     border-color: #007bff;
     color: white;
+  }
+
+  .containerAmbiente img {
+    width: 500px;
+  }
+
+  .h3-ambiente {
+    text-align: center;
+  }
+
+  .h3-boxe {
+    padding: 40px 0px 0px 0px;
   }
   
   /* 48em = 768px */
@@ -557,13 +631,9 @@ html {
     }
   }
 
-  @media screen and (max-width: 1056px) {
+  @media screen and (max-width: 1119px) {
     .card4 {
-      margin: 20px 0px 0px 0px;
-    }
-    .card7 {
-      margin-left: auto;
-      margin-right: auto
+      margin: 20px 20px 0px 0px;
     }
 
     .containerDepoimento {
@@ -571,13 +641,16 @@ html {
       margin: 0 auto 0 auto;
     }
     
-    
     .containerDepoimento h2 {
       font-size: 160%;
     }
 
     .cardDepoimento blockquote {
       font-size: 18px;
+    }
+
+    .cardDepoimento4 {
+      margin: 20px 0px 0px 0px;
     }
 
     .row h2 {
@@ -588,6 +661,18 @@ html {
       font-size: 18px;
     }
 
+    .long-ambiente {
+      font-size: 18px;
+    }
+
+    .long-ambiente-esquerdo {
+      font-size: 18px;
+    }
+
+    .long-maps-esquerdo {
+      font-size: 18px;
+    }
+
   } 
 
   @media screen and (max-width: 882px) {
@@ -595,18 +680,76 @@ html {
       margin: 20px 0px 0px 0px;
     }
     .griImg {
-      height: 180px;
+      height: 250px;
+    }
+    .containerAmbiente img {
+      width: 400px;
     }
   }
 
-  @media screen and (max-width: 796px) {
+  @media screen and (max-width: 839px) {
     .card3 {
-      margin: 20px 0px 0px 0px;
+      margin: 20px 20px 0px 0px;
     }
+
+    .cardPlano3 {
+      margin: 0px 0px 0px 0px;
+    }
+
+    .containerAmbiente img {
+      width: 400px;
+      margin: 0 auto 0 auto; /*Define que o container vai ficar centralizado*/
+    }
+
+    .containerAmbiente p {
+      margin: 0 auto 0 auto; /*Define que o container vai ficar centralizado*/
+      padding: 20px 0px 20px 0px;
+    }
+
+    .containerAmbiente {
+      flex-direction: row;
+      flex-flow: wrap;
+    }
+
+    .containerMaps {
+      flex-direction: row;
+      flex-flow: wrap;
+    }
+
+    .long-maps-esquerdo  {
+      margin: 0 auto 0 auto; /*Define que o container vai ficar centralizado*/
+      text-align: center;
+      width: 100%;
+    }
+
+    .containerMaps iframe {
+      margin: 0 auto 0 auto; /*Define que o container vai ficar centralizado*/
+      padding: 20px 0px 20px 0px;
+    }
+
+    .maps {
+      width: 500px;
+      height: 400px;
+    }
+
+    .footer-nav {
+      font-size: 26px;
+    }
+
+    .footer-nav li {
+      display: block;
+      padding: 10px 0px 0px 0px;
+    }
+
+    .social-links {
+      font-size: 220%;
+    }
+  }
+
+  @media screen and (max-width: 819px) {    
     .cardPlano3 {
       margin: 20px 0px 0px 0px;
     }
-
   }
 
   @media screen and (max-width: 595px) {
@@ -614,7 +757,7 @@ html {
       margin: 20px 0px 0px 0px;
     }
     .griImg {
-      height: 120px;
+      height: 160px;
     }
 
     #white_content_wait {
@@ -633,11 +776,16 @@ html {
     .btn-fechar, .btn-enviar  {
       padding: 0.205rem 0.55rem;
     }
+
+    .maps {
+      width: 400px;
+      height: 300px;
+    }
   }
 
-  @media screen and (max-width: 518px) {
+  @media screen and (max-width: 559px) {
     .card2 {
-      margin: 20px 0px 0px 0px;
+      margin: 20px 20px 0px 0px;
     }
     .cardPlano1 {
       margin: 0px 20px 0px 20px;
@@ -647,6 +795,14 @@ html {
     }
     .cardPlano3{
       margin: 20px 20px 0px 20px;
+    }
+
+    .containerAmbiente img {
+      width: 350px;
+    }
+
+    .card {
+      max-width: 18rem;
     }
 
   }
